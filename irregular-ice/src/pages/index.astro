@@ -26,17 +26,18 @@ import Splash from '../components/splash.astro';
 
 </style>
 <script>
-const loaderElement = document.getElementById('loader-sec');
-const everythingElse = document.getElementById('all');
-if(everythingElse){
-	everythingElse.style.display = 'none';
-}
-console.log(loaderElement)
-setTimeout(() => {
-	if (loaderElement && everythingElse) {
-		loaderElement.style.display = 'none';
-		everythingElse.style.display = 'block';
-	console.log("w")
-}
-}, 1000);
+	const loaderElement = document.getElementById('loader-sec');
+	const everythingElse = document.getElementById('all');
+
+	if(everythingElse){
+		everythingElse.style.display = 'none';
+	}
+	console.log(loaderElement)
+	setTimeout(() => {
+		if (loaderElement && everythingElse) {
+			loaderElement.style.display = 'none';
+			everythingElse.style.display = 'block';
+		console.log("w")
+	}
+	}, 1000);
 </script>
