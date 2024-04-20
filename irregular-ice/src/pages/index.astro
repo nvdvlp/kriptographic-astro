@@ -1,24 +1,22 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Loader from '../components/loader.astro';
-setTimeout(() => {
-const loaderElement = document.getElementById('loader');
-if (loaderElement) {
-    loaderElement.style.display = 'none';
-	console.log("w")
-}
-}, 3000);
+import Splash from '../components/splash.astro';
 ---
 
 <Layout title="Kriptographic">
     <!-- main page -->
-	<section>
-        <Loader />
+	<section id="loader-sec">
+		<Loader />
+	</section>
+	<section id="all">
+		<Splash />
 	</section>
 </Layout>
 
 <style>
-	section{
+	#loader-sec,
+	#all{
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -27,3 +25,18 @@ if (loaderElement) {
 	}
 
 </style>
+<script>
+const loaderElement = document.getElementById('loader-sec');
+const everythingElse = document.getElementById('all');
+if(everythingElse){
+	everythingElse.style.display = 'none';
+}
+console.log(loaderElement)
+setTimeout(() => {
+	if (loaderElement && everythingElse) {
+		loaderElement.style.display = 'none';
+		everythingElse.style.display = 'block';
+	console.log("w")
+}
+}, 1000);
+</script>
