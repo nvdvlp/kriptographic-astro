@@ -1,1 +1,20 @@
-<button (click)="counter = counter + 1">{{counter}}</button>
+<section>
+	<header>
+		<div id="hamburgerButton" (click)="open()">
+			<div class="stick"></div>
+			<div class="stick"></div>
+			<div class="stick"></div>
+		</div>
+		<img src="./../../public/KRIPTOGRHAPIC LOGO 2.png" alt="">
+	</header>
+
+	<section class="section__logo">
+		<h1 class="logo">KRYPTO<br>GRAPHIC</h1>
+		<h1 class="logo back">KRYPTO<br>GRAPHIC</h1>
+	</section>
+</section>
+
+<section [hidden]="hidden">
+	<!-- <HamburgerMenu client:load /> -->
+</section>
+

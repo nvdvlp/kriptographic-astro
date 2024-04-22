@@ -45,6 +45,8 @@ import { ClickEventComponent } from '../components/clickEvent.component';
 
 ---
 import { SplashComponent } from '../components/splash/splash.component';
+import Loader from '../components/loader/loader.astro';
+
 ---
 
 <!doctype html>
@@ -58,15 +60,21 @@ import { SplashComponent } from '../components/splash/splash.component';
 		<title>Kriptographic</title>
 	</head>
 	<body>
-		<SplashComponent client:load />
-		<!-- <div class="lights">
+		<section id="loader-sec">
+			<Loader />
+		</section>
+		<section id="all">
+			<SplashComponent client:load />
+		</section>
+		<div class="lights">
 			<div class="light top-right"></div>
 			<div class="light middle-left"></div>
 			<div class="light bottom-right"></div>
-		</div> -->
+		</div>
 	</body>
 </html>
-<!-- <style is:global>
+
+<style is:global>
 	*{
 		margin: 0;
 		box-sizing: border-box;
@@ -138,4 +146,21 @@ import { SplashComponent } from '../components/splash/splash.component';
 		font-style: normal;
 		font-display: swap;
 	}
-</style> -->
+</style>
+
+<script>
+	const loaderElement = document.getElementById('loader-sec');
+	const everythingElse = document.getElementById('all');
+
+	if(everythingElse){
+		everythingElse.style.display = 'none';
+	}
+	console.log(loaderElement)
+	setTimeout(() => {
+		if (loaderElement && everythingElse) {
+			loaderElement.style.display = 'none';
+			everythingElse.style.display = 'block';
+		console.log("w")
+	}
+	}, 1000);
+</script>

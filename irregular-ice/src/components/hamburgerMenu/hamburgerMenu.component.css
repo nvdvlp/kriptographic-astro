@@ -1,0 +1,43 @@
+.blackBackround{
+    width: 100%;
+    height: 100%;
+    background-color: #070708;
+    opacity: 0.90;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.views{
+    width:267px;
+    margin-bottom:209px;
+}
+.view{
+    text-align: start;
+    font-family: 'Medium', sans-serif;
+    font-size: 32px;
+    color: #D4E4D8;
+    margin-top: 24px;
+    padding-bottom:32px;
+    border-bottom: 1px solid #7A9896;
+}
+
+.joinUs{
+    border-bottom: none;
+}
+
+.socialMediaIcons{
+    width: 185px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-right: 40px;
+}
+
+.icon{
+    margin-right:33px;
+}
+
+.linkedin{
+    width:23px;
+}
