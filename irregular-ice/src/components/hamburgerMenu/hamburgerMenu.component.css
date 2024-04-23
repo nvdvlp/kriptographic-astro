@@ -8,10 +8,11 @@
     justify-content: center;
     align-items: center;
 }
+
 .views{
     width:267px;
-    margin-bottom:209px;
 }
+
 .view{
     text-align: start;
     font-family: 'Medium', sans-serif;
@@ -27,17 +28,31 @@
 }
 
 .socialMediaIcons{
-    width: 185px;
+    width: 267px;
     display: flex;
-    justify-content: center;
-    width: 100%;
-    padding-right: 40px;
+    justify-content: start;
 }
 
 .icon{
-    margin-right:33px;
+
 }
 
 .linkedin{
-    width:23px;
+    width: 45px;
+    height: 23px;
+}
+
+.discord{
+    width: 40px;
+    height: 26px;
+}
+
+.instagram{
+    width: 45px;
+    height: 26px;
+}
+
+.twitter{
+    width: 52px;
+    height: 26px;
 }

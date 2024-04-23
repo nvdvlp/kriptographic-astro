@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { HamburgerMenu } from '../hamburgerMenu/hamburgerMenu.component';
+import { NgClass, NgIf } from '@angular/common';
 
 @Component({
     selector:'app-splash',
-    imports: [HamburgerMenu],
+    imports: [HamburgerMenu, NgClass, NgIf],
     standalone:true,
     template:``,
     templateUrl: './splash.component.html',
@@ -11,10 +12,10 @@ import { HamburgerMenu } from '../hamburgerMenu/hamburgerMenu.component';
 })
 
 export class SplashComponent{
-    hidden: boolean = true;
+    showMenu: boolean = false;
 
     open(){
         console.log("abrir")
-        this.hidden = false;
+        this.showMenu = !this.showMenu;
     }
 }
