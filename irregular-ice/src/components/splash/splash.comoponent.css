@@ -53,8 +53,13 @@ section{
 .hidden{
     position:absolute;
     right: 0; 
-    left: 0;
+    left: -200%;
     top: 0;
     bottom: 0;	
     z-index: 1;
+    transition: left 100ms;
+}
+
+.show{
+    left: 0;
 }

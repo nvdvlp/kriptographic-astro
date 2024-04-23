@@ -12,7 +12,7 @@
 		<h1 class="logo">KRYPTO<br>GRAPHIC</h1>
 		<h1 class="logo back">KRYPTO<br>GRAPHIC</h1>
 	</section>
-	<app-hamburgerMenu *ngIf="showMenu" class="hidden"></app-hamburgerMenu>
+	<app-hamburgerMenu [hidden]="!showMenu" class="hidden" [ngClass]="{'show': slide}"></app-hamburgerMenu>
 </section>
 
 
