@@ -1,0 +1,27 @@
+.team{
+    align-items: flex-start;
+    padding-inline: 20px;
+}
+
+.team__title{
+    font-family: Medium;
+    font-size: 32px;
+    color: #D2EBD8;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 15px;
+}
+
+.team__title > span{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+.team__cards{
+    gap: 75px;
+    justify-content: flex-start;
+    margin-top: 58px;
+}
