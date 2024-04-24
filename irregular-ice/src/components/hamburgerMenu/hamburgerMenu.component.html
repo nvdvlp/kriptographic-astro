@@ -1,4 +1,5 @@
-<section class="blackBackround">
+<section class="blackBackround" [ngClass]="{'show': showMenu}">
+    <img class="close" src="../../../public/Vector.png" alt="" (click)="close()" >
     <div class="views">
         <h2 class="view">ABOUT US</h2>
         <h2 class="view">SERVICES</h2>
