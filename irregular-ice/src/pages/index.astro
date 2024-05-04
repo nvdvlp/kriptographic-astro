@@ -155,6 +155,11 @@ import Loader from '../components/loader/loader.astro';
 		font-style: normal;
 		font-display: swap;
 	}
+	#all{
+		flex-direction: column;
+		justify-content: flex-start;
+		height: 100%;
+	}
 </style>
 
 <script>
@@ -168,7 +173,7 @@ import Loader from '../components/loader/loader.astro';
 	setTimeout(() => {
 		if (loaderElement && everythingElse) {
 			loaderElement.style.display = 'none';
-			everythingElse.style.display = 'block';
+			everythingElse.style.display = 'flex';
 		console.log("w")
 	}
 	}, 1000);

@@ -1,13 +1,13 @@
-.aboutUs{
-    width: 100%;
-    height: 100%;
+:host{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
+    min-height: 100%;
 }
 
-.aboutUs__TittleContainer{
-    margin-bottom:142px;
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
 }
 
 .aboutUs__secondTittle {
