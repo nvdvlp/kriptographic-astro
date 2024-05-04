@@ -1,13 +1,20 @@
 :host{
     display: flex;
     min-height: 100%;
+    background-color: #070708;
 }
 
 .aboutUs{
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+}
+
+.aboutUs__TittleContainer{
+    margin-top:29px;
+    margin-bottom:156px;
 }
 
 .aboutUs__secondTittle {

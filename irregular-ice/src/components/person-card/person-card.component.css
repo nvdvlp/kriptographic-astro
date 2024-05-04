@@ -1,3 +1,10 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .card__img{
     width: 100%;
     height: auto;

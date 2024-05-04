@@ -1,5 +1,14 @@
-.team{
+:host{
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
+    background-color: #070708;
+}
+
+.team{
     padding-inline: 20px;
 }
 
@@ -12,6 +21,7 @@
     align-items: flex-start;
     justify-content: center;
     gap: 15px;
+    margin-top:28px;
 }
 
 .team__title > span{
