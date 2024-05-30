@@ -9,14 +9,9 @@
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
-
-.aboutUs__TittleContainer{
-    margin-top:29px;
-    margin-bottom:156px;
-}
-
+/*tittle*/
 .aboutUs__secondTittle {
     font-size: 15px;
     font-weight: 500;
@@ -25,6 +20,8 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    text-align: center;
+
 }
 
 .aboutUs__aboutUsTittle{
@@ -35,14 +32,11 @@
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
-
+    text-align: center;
+    margin-bottom: 74px;
 }
 
-.aboutUs__3dJacket{
-    width:315px;
-    height: 255px;
-}
-
+/*next button*/
 .aboutUs__nextSectionContainer{
     width: 251px;
     display: flex;
@@ -76,11 +70,210 @@
     background-image: linear-gradient(to right, #BFDFBC 50%, transparent 50%);
     background-size: 4px 1px; 
 }
-
-.aboutUs__fistText{
-    font-size: 22px;
+/*text*/
+.aboutUs__text{
+    font-size: 12px;
     font-weight: 500;
     color: #C6C6C6;
     text-align: center;
     padding-inline: 37px;
+    margin-bottom:27px;
+    font-family:"Poppins";
+}
+
+.dott{
+    margin-bottom:34px;
+}
+
+.columnLandscape{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.midSection{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom:60px;
+}
+
+/*img*/
+.imgContainer{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+}    
+
+.aboutUs__3dJacket{
+    width: 843px;
+    height: 692px;
+    top: 451px;
+    left: 442px;
+    position: relative;
+    transform: translateX(-50%);
+}   
+
+
+@media (max-width: 1439px){
+    .light{
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    /*tittle*/
+    .aboutUs__secondTittle {
+        font-size: 16px;
+    }
+    
+    .aboutUs__aboutUsTittle{
+        font-size: 40px;
+        margin-bottom: 160px;
+    }
+    /*text*/
+    .aboutUs__text{
+        font-size: 20px;
+        text-align: start;
+        margin-right: 227px;
+    }
+
+    .dott{
+        margin-bottom:34px;
+    }
+
+    /*next button*/
+    .aboutUs__nextSectionContainer{
+        padding-left:37px;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .aboutUs__circleNext{
+        width: 39px;
+        height:39px;
+        border-radius: 50%;
+    }
+
+    .aboutUs__playIcon{
+        padding: 0;
+        height: 16px;
+        width: 16px;
+    }
+
+    .aboutUs__dottedLine{
+        width:334px;
+    }
+    /*center*/
+    .midSection{
+        justify-content: center;
+        z-index: 1;
+        position:relative;
+    }
+    /*img*/
+    .imgContainer{  
+        position: absolute;
+        z-index: 0;
+    }    
+    
+    .aboutUs__3dJacket{
+        width: 920px;
+        height: 754px;
+        top: 92px;
+        left: 831px;
+        transform: translateX(-50%);
+    }    
+
+}
+
+@media (min-width: 1440px) {
+    /*tittle*/
+    .aboutUs__secondTittle {
+        font-size: 20px;
+    }
+    
+    .aboutUs__aboutUsTittle{
+        font-size: 48px;
+        margin-bottom: 152px;
+    }
+    /*text*/
+    .aboutUs__text{
+        font-size: 32px;
+        text-align: start;
+        margin-right: 650px;
+    }
+
+    .dott{
+        margin-bottom:34px;
+    }
+
+    /*next button*/
+    .aboutUs__nextSectionContainer{
+        padding-left:37px;
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .aboutUs__circleNext{
+        width: 54px;
+        height:54px;
+        border-radius: 50%;
+    }
+
+    .aboutUs__playIcon{
+        padding: 0;
+        height: 23px;
+        width: 23px;
+    }
+
+    .aboutUs__dottedLine{
+        width:484px;
+    }
+    /*center*/
+    .midSection{
+        justify-content: center;
+        z-index: 2;
+        position:relative;
+    }
+    /*img*/
+    .imgContainer{  
+        position: absolute;
+        z-index: 1;
+    }    
+    
+    .aboutUs__3dJacket{
+        width: 1226px;
+        height: 1005px;
+        top: 22px;
+        left: 1022px;
+        transform: translateX(-50%);
+    } 
+    .lightContainer{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        position: absolute;
+        overflow: hidden;
+        z-index: 0;
+    }  
+    .light{
+        top: 0px;
+        left: 500px;
+        width: 1280px;
+        height: 1229px;
+        position: relative;
+        background: radial-gradient(circle, rgba(144, 187, 118, 0.21) 0%, rgba(144, 187, 118, 0) 100%);
+    }
 }
